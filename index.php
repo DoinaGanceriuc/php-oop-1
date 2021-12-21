@@ -18,6 +18,7 @@ class Movie
     public $year;
     public $genre;
     public $length;
+    public $language;
 
 // all'interno della classe è definito un costruttore
 
@@ -54,5 +55,10 @@ class Movie
     }
 
 }
+
+$firstMovie = new Movie('Il padrino', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, obcaecati.', 1972, 'noir, drammatico, gangster', '175 min');
+
+// var_dump($firstMovie);
+var_dump($firstMovie->getFullMovie());
 
 ?>
