@@ -40,6 +40,18 @@ class Movie
         $this->length = $length;
 
     }
+// all'interno della classe è definito almeno un metodo
+
+/**
+ * Return a movie full info
+ * @return string the move full informations
+ */
+
+    public function getFullMovie()
+    {
+        return 'Il film si intitola ' . $this->name . ' il genere e` ' . $this->genre . ' e` stato prodotto nel ' . $this->year . ' ha una durata di ' . $this->length . ' e la trama e` la seguente: ' . $this->description;
+
+    }
 
 }
 
