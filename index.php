@@ -54,11 +54,29 @@ class Movie
 
     }
 
+    /**
+     * Set movie language
+     *@param string $language
+     */
+
+    public function setMovieLanguage(string $language)
+    {
+        $this->language = $language;
+    }
+
 }
 
 $firstMovie = new Movie('Il padrino', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, obcaecati.', 1972, 'noir, drammatico, gangster', '175 min');
 
 // var_dump($firstMovie);
 var_dump($firstMovie->getFullMovie());
+
+$secondMovie = new Movie('Matrix', 'Pariatur, quod. Officiis libero maxime reprehenderit soluta, sint nam laboriosam ea explicabo quisquam, natus obcaecati sequi reiciendis.', 1999, 'fantascienza, azione', '136 min');
+
+// var_dump($secondMovie);
+$secondMovie->setMovieLanguage('inglese');
+var_dump($secondMovie);
+
+var_dump($secondMovie->getFullMovie());
 
 ?>
